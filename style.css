@@ -36,7 +36,11 @@ body{
 .home ul li{
     gap: 1.2rem;
 }
-.library-heading{
+.library{
+    height: 55vh;
+    position: relative;
+}
+.library-header{
     display: flex;
     justify-content: space-between;
     padding: 1.4rem;
@@ -62,8 +66,87 @@ body{
     width: 24px;
     margin-right: 0.7rem;
 }
-.library-heading button{
+.library-header button{
     border: none;
     background: transparent;
     color: white;
+}
+.library-footer{
+position: absolute;
+bottom: 0;
+padding: 1.4rem;
+}
+.language-btn{
+    font-size: 14px;
+    border: 0.5px solid white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    gap: 0.2rem;
+    display: inline-flex;
+}
+.language-btn img{
+    width: 14px;
+}
+.footer-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.footer-menu a{
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    background: rgba(0, 0, 0, 0.473);
+}
+.nav-left button{
+    background: black;
+    border-radius: 180px;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-right{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.nav-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.navmenu{
+    display: flex;
+    gap: 1rem;
+}
+.navmenu a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.nav-right button{
+    background: white;
+    color: black;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+}
+.divider{
+    width: 2px;
+    background: white;
+    height: 20px;
 }
