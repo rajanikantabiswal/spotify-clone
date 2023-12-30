@@ -1,63 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
     <title>Spotify Clone</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container bg-black">
-        <div class="left">
-            <div class="home bg-gray rounded">
-                <ul class="">
-                    <li class=""><img class="invert" src="logo.svg" alt="Logo"></li>
-                    <li class="flex item-center "><img class="invert" src="home.svg" alt="Home">Home</li>
-                    <li class="flex item-center"><img class="invert" src="search.svg" alt="Search">Search</li>
-                </ul>
-            </div>
-            <div class="library bg-gray rounded">
-                <div class="library-header">
-                    <button class="flex item-center"><span class="library-icon invert"><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg></span>Your Library</button>
-                    <div class="plusIcon"><img class="invert" src="plus-icon.svg" alt=""></div>
-                </div>
-
-                <div class="library-footer">
-                    <div class="footer-menu">
-                        <a href="#">Legal</a>
-                        <a href="#">Privacy Center</a>
-                        <a href="#">Privacy Policies</a>
-                        <a href="#">Cookies</a>
-                        <a href="#">About Ads</a>
-                        <a href="#">Accessibility</a>
-                        <a href="#">Notice at collection</a>
-                        <a href="#">Your Privacy Choices</a>
-
-                    </div>
-                    <div class="language-btn"><img class="invert" src="language.svg" alt="Language Button">English</div>
-                </div>
-            </div>
-        </div> 
-        <div class="right bg-gray rounded">
-            <div class="header">
-                <div class="nav-left">
-                    <button><img class="" src="left-arrow.svg" alt=""></button>
-                    <button><img class="" src="right-arrow.svg" alt=""></button>
-                </div>
-                <div class="nav-right">
-                    <div class="navmenu">
-                        <a href="#">Premium</a>
-                        <a href="#">Support</a>
-                        <a href="#">Download</a>
-                    </div>
-                    <div class="divider"></div>
-                    <a href="#">Sign Up</a>
-                    <button>Login</button>
-                </div>
-            </div>
+      <div class="left">
+        <div class="home bg-gray rounded">
+          <ul class="">
+            <li class=""><img class="invert" src="logo.svg" alt="Logo" /></li>
+            <li class="flex item-center">
+              <img class="invert" src="home.svg" alt="Home" />Home
+            </li>
+            <li class="flex item-center">
+              <img class="invert" src="search.svg" alt="Search" />Search
+            </li>
+          </ul>
         </div>
+        <div class="library bg-gray rounded">
+          <div class="library-header">
+            <button class="flex item-center">
+              <span class="library-icon invert"
+                ><svg
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  class="Svg-sc-ytk21e-0 iYxpxA"
+                >
+                  <path
+                    d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                  ></path></svg></span
+              >Your Library
+            </button>
+            <div class="plusIcon">
+              <img class="invert" src="plus-icon.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="library-footer">
+            <div class="footer-menu">
+              <a href="#">Legal</a>
+              <a href="#">Privacy Center</a>
+              <a href="#">Privacy Policies</a>
+              <a href="#">Cookies</a>
+              <a href="#">About Ads</a>
+              <a href="#">Accessibility</a>
+              <a href="#">Notice at collection</a>
+              <a href="#">Your Privacy Choices</a>
+            </div>
+            <div class="language-btn">
+              <img
+                class="invert"
+                src="language.svg"
+                alt="Language Button"
+              />English
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-gray rounded">
+        <div class="header">
+          <div class="nav-left">
+            <button><img class="" src="left-arrow.svg" alt="" /></button>
+            <button><img class="" src="right-arrow.svg" alt="" /></button>
+          </div>
+          <div class="nav-right">
+            <div class="navmenu">
+              <a href="#">Premium</a>
+              <a href="#">Support</a>
+              <a href="#">Download</a>
+            </div>
+            <div class="divider"></div>
+            <a href="#">Sign Up</a>
+            <button>Login</button>
+          </div>
+        </div>
+        <div class="content">
+          <div class="playlist">
+            <div class="playlist-header">
+              <h3>Spotify Playlist</h3>
+              <span>Show all</span>
+            </div>
+          </div>
+          <div class="playlist-cards">
+            <div class="card">
+              <img src="banner/banner1.JPG" alt="" />
+              <h5>New Year 2023</h5>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card">
+              <img src="banner/banner1.JPG" alt="" />
+              <h5>New Year 2023</h5>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card">
+              <img src="banner/banner1.JPG" alt="" />
+              <h5>New Year 2023</h5>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card">
+              <img src="banner/banner1.JPG" alt="" />
+              <h5>New Year 2023</h5>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card">
+              <img src="banner/banner1.JPG" alt="" />
+              <h5>New Year 2023</h5>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+
+          <div class="sleep">
+            <div class="sleep-header">
+              <h3>Spotify Playlist</h3>
+              <span>Show all</span>
+            </div>
+          </div>
+          <div class="sleep-cards">
+            <div class="card">
+              <img src="banner/banner1.JPG" alt="" />
+              <h5>New Year 2023</h5>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card">
+              <img src="banner/banner1.JPG" alt="" />
+              <h5>New Year 2023</h5>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>

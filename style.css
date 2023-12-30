@@ -20,9 +20,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    height: 85vh;
 }
 .right{
     width: 77vw;
+    height: 85vh;
+    overflow: hidden;
 }
 .home{
     padding: 1.4rem;
@@ -37,7 +40,7 @@ body{
     gap: 1.2rem;
 }
 .library{
-    height: 55vh;
+    height: 100%;
     position: relative;
 }
 .library-header{
@@ -103,7 +106,7 @@ padding: 1.4rem;
     justify-content: space-between;
     align-items: center;
     padding: 0.4rem 1rem;
-    background: rgba(0, 0, 0, 0.473);
+    background: #181818;
 }
 .nav-left button{
     background: black;
@@ -149,4 +152,42 @@ padding: 1.4rem;
     width: 2px;
     background: white;
     height: 20px;
+}
+.sleep{
+    margin-top: 1.8rem;
+}
+.playlist-header, .sleep-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.playlist-header span,
+.sleep-header span{
+    font-size: 14px;
+}
+.playlist-cards,
+.sleep-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+.card{
+    padding: 1rem;
+    background: #181818;
+    border-radius: 7px;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.8rem;
+}
+.card p{
+    font-size: 14px;
+}
+.content{
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 6rem;
 }
