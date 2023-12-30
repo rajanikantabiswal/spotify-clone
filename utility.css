@@ -14,9 +14,11 @@
 .bg-black{
     background: black;
     color: white;
+    
 }
 .bg-gray{
     background: #121212;
+    color: white;
 }
 .invert{
     filter: invert(1);

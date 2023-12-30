@@ -16,13 +16,13 @@ body{
     gap: 0.5rem;
 }
 .left{
-    width: 25vw;
+    width: 23vw;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 .right{
-    width: 75vw;
+    width: 77vw;
 }
 .home{
     padding: 1.4rem;
@@ -43,5 +43,27 @@ body{
     align-items: center;
 }
 .plusIcon{
-    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem;
+    border-radius: 180px;
+}
+.plusIcon:hover{
+    background-color: rgb(27, 27, 27);
+    transition: 0.5s ease;
+}
+.plusIcon img{
+    width: 1.2rem;
+}
+.library-icon{
+    width: 24px;
+    margin-right: 0.7rem;
+}
+.library-heading button{
+    border: none;
+    background: transparent;
+    color: white;
 }
