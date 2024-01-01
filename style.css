@@ -177,6 +177,8 @@ padding: 1.4rem;
     padding: 1rem;
     background: #181818;
     border-radius: 7px;
+    position: relative;
+    transition: background-color 0.3s ease;
 }
 .card img{
     width: 100%;
@@ -190,4 +192,30 @@ padding: 1.4rem;
     overflow-y: scroll;
     height: 100%;
     padding-bottom: 6rem;
+}
+.play-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 180px;
+    background-color: rgb(47, 163, 47);
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    opacity: 0; /* Initially set the opacity to 0 to hide the button */
+    transform: translateY(20px); /* Initially move the button down */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transitions */
+}
+.play-btn i{
+    color: black;
+}
+.card:hover{
+    background: #282828;
+   
+}
+.card:hover .play-btn{
+    opacity: 1; /* Show the button by changing opacity on hover */
+    transform: translateY(0); /* Move the button up to its original position */
 }
